@@ -1,0 +1,241 @@
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+.reveal.active {
+  opacity: 1;
+}
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+.active.fade-left {
+  animation: fade-left 1s ease-in;
+}
+.active.fade-right {
+  animation: fade-right 1s ease-in;
+}
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.bg-text {
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+.btn-nav-login {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn-nav-login {
+    transition: none;
+  }
+}
+.btn-check:focus + .btn-nav-login,
+.btn-nav-login:focus {
+  outline: 0;
+  background-color: transparent;
+  border-color: transparent;
+}
+.btn-nav-login:hover {
+  color: #fbd240;
+  background-color: transparent;
+  border-color: transparent;
+  text-decoration: underline;
+}
+.btn-nav-login:disabled,
+.btn-nav-login.disabled,
+fieldset:disabled .btn {
+  pointer-events: none;
+  opacity: 0.65;
+}
+
+.btn-nav-login-xs {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fbd240;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn-nav-login-xs {
+    transition: none;
+  }
+}
+.btn-check:focus + .btn-nav-login-xs,
+.btn-nav-login-xs:focus {
+  outline: 0;
+  background-color: transparent;
+  border-color: transparent;
+}
+.btn-nav-login-xs:hover {
+  color: #a78a22;
+  background-color: transparent;
+  border-color: transparent;
+  text-decoration: underline;
+}
+.btn-nav-login-xs:disabled,
+.btn-nav-login-xs.disabled,
+fieldset:disabled .btn {
+  pointer-events: none;
+  opacity: 0.65;
+}
+
+.btn-nav-meun {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn-nav-meun {
+    transition: none;
+  }
+}
+.btn-check:focus + .btn-nav-meun,
+.btn-nav-meun:focus {
+  outline: 0;
+  background-color: transparent;
+  border-color: transparent;
+}
+.btn-nav-meun:hover,
+.btn-nav-meun:focus {
+  color: #fbd240;
+  background-color: transparent;
+  border-color: transparent;
+  text-decoration: underline;
+}
+.btn-nav-meun:disabled,
+.btn-nav-meun.disabled,
+fieldset:disabled .btn {
+  pointer-events: none;
+  opacity: 0.65;
+}
+
+.btn-add {
+  color: #a9a9a9;
+  /* text-align: center; */
+  text-decoration: none;
+  /* vertical-align: middle; */
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 0;
+  padding: 1rem 0.75rem;
+  font-size: 5rem;
+}
+.btn-add:hover,
+.btn-add:focus {
+  color: #767676;
+  background-color: transparent;
+  border: 0;
+}
+
+
+.btn-storyline-add {
+  color: #a9a9a9;
+  /* text-align: center; */
+  text-decoration: none;
+  /* vertical-align: middle; */
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 0;
+  font-size: 2rem;
+}
+.btn-storyline-add:hover,
+.btn-storyline-add:focus {
+  color: #767676;
+  background-color: transparent;
+  border: 0;
+}
